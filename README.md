@@ -6,6 +6,7 @@ Catch2 repo from GitHub (https://github.com/catchorg/Catch2)
 is pulled in local project skipList. Doxygen is used for project documentation.
 
 To build project and project documentation, go to root directory:
+<pre>
 $ cd root
 $ mkdir build
 $ cd build
@@ -16,11 +17,11 @@ $ make doc
 To run tests:
 $ cd test
 $ ./tests
-
+</pre>
 To check valgrind: valgrind --tool=memcheck --leak-check=full --show-leak-kinds=all ./tests
 
 Benchmark results:
-
+<pre>
 -------------------------------------------------------------------------------
 Doubly Linked List insert and search - Benchmark
 -------------------------------------------------------------------------------
@@ -39,3 +40,4 @@ Search 100 nodes in Doubly Linked
 List of 100.000 nodes                          100             1     4.40006 s
                                         44.8145 ms    43.9176 ms    45.9953 ms
                                         5.21421 ms    4.24972 ms    6.19041 ms
+</pre>
